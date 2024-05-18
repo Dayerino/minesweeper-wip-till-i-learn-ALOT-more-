@@ -1,0 +1,44 @@
+#mainScreen{
+    min-width: 0;
+    max-width: 400px;
+    position: absolute;
+    border: solid black 5px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    left: 750px;
+    top: 100px;
+    width: 250px;
+    height: 350px;
+}
+#grid{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr; the line below does the
+    exact same thing but without having to repeat the value*/
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+.column{
+    background-color: lightblue;
+    border: solid black 1px;
+    text-align: center;
+    padding: 15px;
+    color: lightblue;
+    font-size: 0.8em;
+}
+.column:hover{
+    cursor: pointer;
+    background-color: bisque;
+    color: bisque;
+}
+#btn{
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 30px 10px 30px;
+    background-color: lightblue;
+    left: 30%;
+    top: 40px;
+}
+/* might have to redo this breh
+maybe try tables*/
